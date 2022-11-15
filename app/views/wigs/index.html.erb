@@ -1,2 +1,18 @@
 <h1>Wigs#index</h1>
 <p>Find me in app/views/wigs/index.html.erb</p>
+
+<div class="card-category" style="background-images>
+  <% @wigs.each do |wig| %>
+    <div class="wig-text">
+      <%= wig.name %><br>
+      <%= wig.color %><br>
+      <%= wig.hair_style %><br>
+      <%= wig.hair_type %><br>
+      <%= wig.size %>
+    </div>
+  <% end %>
+</div>
+<%
+#= cl_image_tag("IMAGE_WITH_FACE_ID",width: 150, height: 150, crop: :thumb, gravity: :face) %>
+<%= cl_image_tag("oawxhh6jzxqhnbuqe3yn",
+ width: 300, height: 400, crop: :fill) %>
