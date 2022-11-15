@@ -9,13 +9,14 @@
 # require 'faker'
 
 # puts 'Creating 10 fake wigs...'
-#10.times do
-#   wig = Wig.new(
-#     size: Faker::Number.decimal_part(digits: 2),
-#     color: "Faker::Color.hex_color",
-#     hair_style: ,
-#     hair_type:
-#   )
-#   wig.save!
-# end
-# puts 'Finished!'
+10.times do
+  wig = Wig.new(
+    name: Faker::Name.middle_name,
+    size: Faker::Number.decimal_part(digits: 2),
+    color: "Faker::Color.hex_color",
+    hair_style: ,
+    hair_type:
+  )
+  wig.save!
+end
+puts 'Finished!'
