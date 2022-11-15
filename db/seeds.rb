@@ -6,17 +6,17 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# require 'faker'
+require 'faker'
 
 # puts 'Creating 10 fake wigs...'
+types = ["natural", "artificial"]
 10.times do
-  wig = Wig.new(
+  Wig.create!(
     name: Faker::Name.middle_name,
-    size: Faker::Number.decimal_part(digits: 2),
-    color: "Faker::Color.hex_color",
-    hair_style: ,
-    hair_type:
+    size: Faker::Measurement.height,
+    color: Faker::Color.hex_color,
+    hair_style: Faker::Music.genre,
+    hair_type: types.sample
   )
-  wig.save!
 end
 puts 'Finished!'

@@ -45,4 +45,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_15_131214) do
     t.string "color"
     t.string "name"
   end
+
 end
