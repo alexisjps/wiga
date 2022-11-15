@@ -10,10 +10,10 @@ require 'faker'
 
 # puts 'Creating 10 fake wigs...'
 types = ["natural", "artificial"]
-names = Name.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-sizes = Size.create([{ size: "Star Wars" }, { size: "Lord of the Rings" }])
-colors = Color.create([{ color: "Star Wars" }, { color: "Lord of the Rings" }])
-hair_styles = Hair_style.create([{ hair_style: "Star Wars" }, { hair_style: "Lord of the Rings" }])
+names = Name.create([{ name: "MADISON" }, { name: "ANASTASIA" }, { name: "CAROLINE" }, { name: "JANICE" }, { name: "IVY" }, { name: "KIM" }, { name: "LORETTA" }, { name: "CHLOÉ" }, { name: "ESTELLE" }, { name: "ELISA" }])
+sizes = Size.create([{ size: "Small" }, { size: "Medium" }, { size: "Large" }])
+colors = Color.create([{ color: "Black" }, { color: "Brown" }])
+hair_styles = Hair_style.create([{ hair_style: "Noir" }, { hair_style: "Lord of the Rings" }])
 hair_types = Hair_type.create([{ hair_type: "Star Wars" }, { hair_type: "Lord of the Rings" }])
 
 Wig.create(name: "Luke", movie: movies.first)
