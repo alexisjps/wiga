@@ -4,6 +4,7 @@
 
 <div class="d-flex juftify-content-around flex-wrap">
   <% @wigs.each do |wig| %>
+  <%= link_to wig_path(wig) do %>
   <div class="wig">
    <%= image_tag wig.url %>
     <div class="wig-infos">
@@ -13,5 +14,6 @@
       </div>
     </div>
   </div>
+  <% end %>
    <% end %>
 </div>
