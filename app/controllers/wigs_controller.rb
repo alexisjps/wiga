@@ -1,5 +1,6 @@
 class WigsController < ApplicationController
   def index
+    @wigs = Wig.all
   end
 
   def create
@@ -19,5 +20,11 @@ class WigsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+
+  def wig_params
+    params.require(:wig).permit(:name, :picture)
   end
 end
