@@ -1,0 +1,9 @@
+<%= simple_form_for (@wig) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :color %>
+  <%= f.input :size %>
+  <%= f.input :hair_style %>
+  <%= f.input :hair_type %>
+  <%= f.input :picture,as: :file %>
+  <%= f.submit %>
+<% end %>
