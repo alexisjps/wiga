@@ -1,10 +1,14 @@
-<h1>wigs</h1>
+<h1 class="text-center"><%= @wig.name %></h1>
 <div class="container">
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"><%= @wig.name %></h5>
-      <p class="card-text">cette perruque est de <%= @wig.size %> de couleur: <%= @wig.color %>,style <%= @wig.hair_style %>,de type: <%= @wig.hair_type %></p>
+  <div class="card mx-auto ">
+   <%= image_tag @wig.url %>
+    <div class="card-body text-center">
+      <ul class="list-group">
+        <li class="list-group-item">Taille: <%= @wig.size %></li>
+        <li class="list-group-item">Couleur: <%= @wig.color %></li>
+        <li class="list-group-item">style: <%= @wig.hair_style %></li>
+        <li class="list-group-item" >type: <%= @wig.hair_type %></li>
+      </ul>
       <a href="#" class="btn btn-primary">booking</a>
     </div>
   </div>
