@@ -1,2 +1,11 @@
-<h1>Wigs#show</h1>
-<p>Find me in app/views/wigs/show.html.erb</p>
+<h1>wigs</h1>
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= @wig.name %></h5>
+      <p class="card-text">cette perruque est de <%= @wig.size %> de couleur: <%= @wig.color %>,style <%= @wig.hair_style %>,de type: <%= @wig.hair_type %></p>
+      <a href="#" class="btn btn-primary">booking</a>
+    </div>
+  </div>
+</div>
