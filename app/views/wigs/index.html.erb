@@ -1,11 +1,14 @@
 <h1>Wigs#index</h1>
 <p>Find me in app/views/wigs/index.html.erb</p>
 
-<div class="card-category d-flex justify-content-around" style="background-images:url(wig.url)">
+<div class="card-category d-flex flex-wrap justify-content-around" style="background-images:url(wig.url)">
   <% @wigs.each do |wig| %>
+  <%= link_to wig_path(wig) do %>
     <div class="wig-text">
       <%= image_tag wig.url %>
       <%= wig.name %><br>
+      <%# <%= link_to "En savoir plus", wig_path(wig)%>
     </div>
+    <% end %>
   <% end %>
 </div>
