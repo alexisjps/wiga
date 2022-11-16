@@ -7,14 +7,16 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 require 'faker'
+puts 'destroy!'
 
-# puts 'Creating 10 fake wigs...'
+Wig.destroy_all
+puts 'Creating 10 fake wigs...'
 types = ["natural", "artificial"]
 10.times do
   Wig.create!(
     name: Faker::Name.middle_name,
     size: Faker::Measurement.height,
-    color: Faker::Color.hex_color,
+    color: Faker::Color.color_name,
     hair_style: Faker::Music.genre,
     hair_type: types.sample
   )
