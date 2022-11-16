@@ -7,6 +7,7 @@ class WigsController < ApplicationController
   end
 
   def show
+    @wig = Wig.find(params[:id])
   end
 
   def new

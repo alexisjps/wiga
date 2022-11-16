@@ -28,16 +28,4 @@ wig_j = Wig.create!(name: "CHLOE", size: "medium", color: "brown", hair_style: "
 wig_k = Wig.create!(name: "ESTELLE", size: "small", color: "brown", hair_style: "curly", hair_type: "artificial", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544508/development/soaa153-01_wzq8zf.jpg")
 wig_l = Wig.create!(name: "ELISA", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544549/development/soaa142-01_uwn5qz.jpg")
 
-# Wig.create(name: names.sammple, size: size.sample, color: color.sample, hair_styles: hair_style.sample, hair_type: hair_type.sammple)
-
-
-# 10.times do
-#   Wig.create!(
-#     name: Faker::Name.middle_name,
-#     size: Faker::Measurement.height,
-#     color: Faker::Color.hex_color,
-#     hair_style: Faker::Music.genre,
-#     hair_type: types.sample
-#   )
-# end
 puts 'Finished!'
