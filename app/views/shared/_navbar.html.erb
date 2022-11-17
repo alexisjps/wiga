@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to "/", class: "navbar-brand" do %>
       <%= image_tag "https://www.logolynx.com/images/logolynx/74/74bc7c9fcabc75f74e1a72a4f7d64f89.jpeg" %>
     <% end %>
 
@@ -12,11 +12,22 @@
       <ul class="navbar-nav me-auto">
         <%# if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+            <%= link_to "Home", "/", class: "nav-link" %>
           </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
+            <ul class="list-inline tabs-underlined">
+              <li>
+                <%= link_to "Wigs", wigs_path, class: "tab-underlined" %>
+              </li>
+              <li>
+                <a href="#" class="tab-underlined">Bookings</a>
+              </li>
+              <li>
+                <a href="#" class="tab-underlined">Requests</a>
+              </li>
+              <li>
+                <a href="#" class="tab-underlined">Conversations</a>
+              </li>
+            </ul>
           <li class="nav-item dropdown">
             <%= image_tag "https://macoiffeuseafro.com/blog/wp-content/uploads/2018/12/newspiccccs.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

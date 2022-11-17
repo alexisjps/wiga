@@ -1,15 +1,20 @@
-<h1 class="text-center"><%= @wig.name %></h1>
 <div class="container">
-  <div class="card mx-auto ">
-   <%= image_tag @wig.url %>
-    <div class="card-body text-center">
+  <div class="cards">
+
+    <div class="card-category rounded-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"   >
+    <%= image_tag @wig.url %>
+    </div>
+
+    <div class="card-category d-flex flex-column justify-content-center">
       <ul class="list-group">
-        <li class="list-group-item">Taille: <%= @wig.size %></li>
-        <li class="list-group-item">Couleur: <%= @wig.color %></li>
-        <li class="list-group-item">style: <%= @wig.hair_style %></li>
-        <li class="list-group-item" >type: <%= @wig.hair_type %></li>
-      </ul>
-      <a href="#" class="btn btn-primary">booking</a>
+          <li class="list-group-item"><H1><%= @wig.name %></h1></li>
+          <li class="list-group-item"><strong>SIZE:</strong> <%= @wig.size %></li>
+          <li class="list-group-item"><strong>COLOR: </strong><%= @wig.color %></li>
+          <li class="list-group-item"><strong>STYLE: </strong><%= @wig.hair_style %></li>
+          <li class="list-group-item" ><strong>TYPE: </strong><%= @wig.hair_type %></li>
+        </ul>
+        <%= link_to "booking", "#", class: "btn btn-ghost mt-3" %>
     </div>
   </div>
+
 </div>
