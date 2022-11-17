@@ -1,28 +1,36 @@
 class BookingsController < ApplicationController
+  before_action :set_booking, only: %i[:show]
+    def index
+      @bookings = Booking.all
+    end
+
+    def show
+    end
+
   def new
-    @bookings = Booking.new
+    @wig = Wig.find(params[:wig_id])
+    @booking = Booking.new
   end
 
   def create
-    @booking = Booking.new(params[:booking])
-    @booking.save!
-    redirect_to booking_path(@booking)
-  end
-
-  def index
-    @booking = Booking.all
-  end
-
-  def show
+    @booking = Booking.new(booking_params)
+    @wig = Wig.find(params[:wig_id])
+    @booking.wig = @wig
+    @booking.user = current_user
+    if @booking.save!
+      redirect_to action: 'show', id: @booking.id
+    else
+      render :new
+    end
   end
 
   private
 
-  def set_booking
-    @booking = Booking.find(params[:id])
+  def booking_params
+    params.require(:booking).permit(:starts_at, :ends_at)
   end
 
-  def booking_params
-    params.require(:booking).permit(:first_name, :last_name)
+  def set_booking
+    @booking = Booking.find(params[:id])
   end
 end

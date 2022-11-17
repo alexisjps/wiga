@@ -1,23 +1,6 @@
-<h1>Bookings#new</h1>
-<p>Find me in app/views/bookings/new.html.erb</p>
-
-<div class="container">
-  <div class="cards">
-
-    <div class="card-category rounded-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))"   >
-    <%= image_tag @booking.url %>
-    </div>
-
-    <div class="card-category d-flex flex-column justify-content-center">
-      <ul class="list-group">
-          <li class="list-group-item"><H1><%= @booking.name %></h1></li>
-          <li class="list-group-item"><strong>SIZE:</strong> <%= @booking.size %></li>
-          <li class="list-group-item"><strong>COLOR: </strong><%= @booking.color %></li>
-          <li class="list-group-item"><strong>STYLE: </strong><%= @booking.hair_style %></li>
-          <li class="list-group-item" ><strong>TYPE: </strong><%= @booking.hair_type %></li>
-        </ul>
-        <%= link_to "booking", "#", class: "btn btn-ghost mt-3" %>
-    </div>
-  </div>
-
-</div>
+<%= simple_form_for ([@wig, @booking]) do |f| %>
+  <%= f.input :starts_at %>
+  <%= f.input :ends_at %>
+  <%= f.input :accepted %>
+  <%= f.submit %>
+<% end %>
