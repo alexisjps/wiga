@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
 Wig.destroy_all
 
 wig_a = Wig.create!(name: "MADISON", size: "small", color: "black", hair_style: "smooth", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544598/development/soaa145-01_ei77gr.jpg")
@@ -16,8 +8,20 @@ wig_e = Wig.create!(name: "JANICE", size: "large", color: "brown", hair_style: "
 wig_f = Wig.create!(name: "IVY", size: "small", color: "brown", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544509/development/soaa138-01_xhnqhl.jpg")
 wig_g = Wig.create!(name: "KIM", size: "large", color: "black", hair_style: "wavy", hair_type: "artificiall", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544548/development/soaa11-01_jkuvwx.jpg")
 wig_h = Wig.create!(name: "LORETTA", size: "large", color: "black", hair_style: "smooth", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544548/development/soaa113-01_x8cfhs.jpg")
-wig_j = Wig.create!(name: "CHLOE", size: "medium", color: "brown", hair_style: "smooth", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544550/development/soaa193-01_osupvx.jpg")
-wig_k = Wig.create!(name: "ESTELLE", size: "small", color: "brown", hair_style: "curly", hair_type: "artificial", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544508/development/soaa153-01_wzq8zf.jpg")
-wig_l = Wig.create!(name: "ELISA", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544549/development/soaa142-01_uwn5qz.jpg")
+wig_i = Wig.create!(name: "CHLOE", size: "medium", color: "brown", hair_style: "smooth", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544550/development/soaa193-01_osupvx.jpg")
+wig_j = Wig.create!(name: "ESTELLE", size: "small", color: "brown", hair_style: "curly", hair_type: "artificial", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544508/development/soaa153-01_wzq8zf.jpg")
+wig_k = Wig.create!(name: "ELISA", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668544549/development/soaa142-01_uwn5qz.jpg")
+wig_1 = Wig.create!(name: "RYAN", size: "large", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647190/development/Eseewigs-perruque-Afro-boucl-e-pour-homme-postiche-de-remplacement-en-PU-et-en-dentelle-MONO.jpg_Q90.jpg__ha7ady.webp")
+wig_2 = Wig.create!(name: "WILLIAM", size: "small", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647220/development/Toupet-en-dentelle-suisse-pour-hommes-100-cheveux-humains-Afro-cr-pus-boucl-s-8x10-1B.jpg_Q90.jpg__htcgnq.jpg")
+wig_3 = Wig.create!(name: "GARY", size: "medium", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647251/development/Toupet-Afro-pour-hommes-cheveux-humains-cr-pus-boucl-s-syst-me-de-remplacement-de-cheveux.jpg_Q90.jpg__vofiye.webp")
+wig_4 = Wig.create!(name: "NATHAN", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647285/development/Perruque-de-cheveux-humains-cr-pus-et-boucl-s-pour-hommes-postiche-de-remplacement-10x8-pouces.jpg_Q90.jpg__mfkaid.webp")
+wig_5 = Wig.create!(name: "THOMAS", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647332/development/Toupet-de-cheveux-humains-boucl-s-Afro-pour-hommes-syst-me-de-remplacement-boucles-noires-nouvelle.jpg_Q90.jpg__jaowbr.jpg")
+wig_6 = Wig.create!(name: "CHARLES", size: "large", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647372/development/Toupet-de-cheveux-humains-boucl-s-Afro-pour-hommes-syst-me-de-remplacement-boucles-noires-nouvelle.jpg_640x640_rr6vbb.jpg")
+wig_7 = Wig.create!(name: "EUGENE", size: "medium", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647409/development/Perruque-toupet-en-dentelle-suisse-pour-hommes-noirs-10x8-pouces-syst-me-de-cheveux-humains-boucl.jpg_Q90.jpg__rr6hsb.jpg")
+wig_8 = Wig.create!(name: "BOBBY", size: "medium", color: "white", hair_style: "wavy", hair_type: "artificial", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647438/development/Perruque-toupet-naturelle-cheveux-humains-boucl-s-10x8-pouces-blonds-613-Afro-Full-Lace-Swiss-Lace.jpg_Q90.jpg__dely30.webp")
+wig_9 = Wig.create!(name: "JORDAN", size: "large", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647565/development/S81ee958bad7c40f7b274c2a8614c34f09_b0xg9u.jpg")
+wig_10 = Wig.create!(name: "LOUIS", size: "medium", color: "black", hair_style: "curly", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647567/development/Perruque-de-cheveux-humains-Afro-pour-hommes-noirs-perruque-afro-am-ricaine-toupet-dentelle-suisse-avec.jpg_Q90.jpg__mr7of8.jpg")
+wig_11 = Wig.create!(name: "DANIEL", size: "large", color: "black", hair_style: "smooth", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668647569/development/12-Long-remplacement-droit-fris-de-cheveux-pour-la-dentelle-Mono-de-toupet-de-Stock-d.jpg_Q90.jpg__zeonuh.webp")
+wig_13 = Wig.create!(name: "BILLY", size: "medium", color: "black", hair_style: "wavy", hair_type: "natural", url:"https://res.cloudinary.com/dcjj6hxol/image/upload/v1668670247/development/Perruque-Afro-compl-te-pour-hommes-postiche-fait-la-main-cheveux-humains-cr-pus-boucl-s.jpg_Q90.jpg__wae48z.webp")
 
 puts 'Finished!'

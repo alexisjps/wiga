@@ -1,17 +1,17 @@
-<h1>Wigs#index</h1>
-<p>Find me in app/views/wigs/index.html.erb</p>
+<h1>WIG@LOCA</h1>
+<p>Changez votre style</p>
 
-
-<div class="d-flex juftify-content-around flex-wrap">
+<div class="container d-flex juftify-content-around flex-wrap">
   <% @wigs.each do |wig| %>
   <%= link_to wig_path(wig) do %>
-  <div class="wig">
+  <div class="wig img-fluid">
    <%= image_tag wig.url %>
     <div class="wig-infos">
       <div>
         <h2><%= wig.name %></h2>
-        <p>Short description here!</p>
+        <p>Voir description</p>
       </div>
+      <h2 class="wig-pricing">€8.99 / jour</h2>
     </div>
   </div>
   <% end %>
