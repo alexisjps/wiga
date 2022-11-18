@@ -1,9 +1,9 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "/", class: "navbar-brand" do %>
-      <%= image_tag "https://www.logolynx.com/images/logolynx/74/74bc7c9fcabc75f74e1a72a4f7d64f89.jpeg" %>
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "https://res.cloudinary.com/dcjj6hxol/image/upload/v1668779745/development/74bc7c9fcabc75f74e1a72a4f7d64f89_nz4cmf.jpg" %>
     <% end %>
-
+    <% @bookings = Booking.where(user: current_user) %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,28 +12,17 @@
       <ul class="navbar-nav me-auto">
         <%# if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "/", class: "nav-link" %>
+            <%= link_to "Accueil", root_path, class: "nav-link" %>
           </li>
             <ul class="list-inline tabs-underlined">
               <li>
                 <%= link_to "Wigs", wigs_path, class: "tab-underlined" %>
               </li>
-              <li>
-                <a href="/bookings/index" class="tab-underlined">Bookings</a>
-              </li>
-              <li>
-                <a href="#" class="tab-underlined">Requests</a>
-              </li>
-              <li>
-                <a href="#" class="tab-underlined">Conversations</a>
-              </li>
             </ul>
           <li class="nav-item dropdown">
-            <%= image_tag "https://macoiffeuseafro.com/blog/wp-content/uploads/2018/12/newspiccccs.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%= image_tag "https://res.cloudinary.com/dcjj6hxol/image/upload/v1668779914/development/newspiccccs_q20ul0.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
+              <%= link_to "Déconnexion", destroy_user_session_path, class: "dropdown-item", data: {turbo_method: :delete} %>
             </div>
           </li>
         <%# else %>

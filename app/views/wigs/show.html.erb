@@ -13,7 +13,7 @@
           <li class="list-group-item"><strong>STYLE: </strong><%= @wig.hair_style %></li>
           <li class="list-group-item" ><strong>TYPE: </strong><%= @wig.hair_type %></li>
         </ul>
-        <%= link_to "booking", "#", class: "btn btn-ghost mt-3" %>
+        <%= link_to "booking", new_wig_booking_path(@wig), class: "btn btn-ghost mt-3" %>
     </div>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
     <div style="width: 100%; height: 400px;"
