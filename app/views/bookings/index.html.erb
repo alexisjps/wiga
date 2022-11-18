@@ -1,7 +1,15 @@
-<h1>Bookings#index</h1>
-<p>Find me in app/views/bookings/index.html.erb</p>
+<h1 class="text-center my-5">BOOKINGS</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.coiffure-hairtendance.fr/wp-content/uploads/2016/03/logo-hair-tendance-coiffure-perruques-mariage-chatillon-sur-seine-bourgogne-21-11-1.jpg);">
+ <div class="container">
+  <p><% @bookings.each do |booking| %></p>
+  <div class="d-flex justify-content-around bg-white">
+    <li class="list-unstyled opacity-100"><%= image_tag booking.wig.url %></li>
+    <div class="d-flex justify-content-center flex-column">
+      <li>Start: <%= booking.starts_at %></li>
+      <li>End: <%= booking.ends_at %></li>
+    </div>
+  </div>
+  <%end %>
+ </div>
 
-<%= @bookings.each do |booking| %>
-  <%= booking.starts_at %>
-  <%= booking.ends_at %>
-<%= end %>
+</div>

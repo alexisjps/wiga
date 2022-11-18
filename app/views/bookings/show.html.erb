@@ -1,16 +1,11 @@
-<h1>Bookings#show</h1>
-<p>Find me in app/views/bookings/show.html.erb</p>
-
-<div class="card">
-  <img >
-  <div class="card-body">
-    <h5 class="card-title">Votre réservation</h5>
-    <p class="card-text">
-      <ul>
-        <li><%= image_tag @booking.wig.url %></li>
-        <li>Début du booking : <%= @booking.starts_at %></li>
-        <li>Fin du booking : <%= @booking.ends_at %></li>
-      </ul>
-    </p>
+<h1 class="text-center mt-3">My Booking</h1>
+<div class="container">
+  <div class="card-product">
+    <%= image_tag @booking.wig.url %>
+    <div class="card-product-infos">
+      <h2>Wig: <%= @booking.wig.name %></h2>
+      <h2>Start: <%= @booking.starts_at %></h2>
+      <h2>End: <%= @booking.ends_at %></h2>
+    </div>
   </div>
 </div>
