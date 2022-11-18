@@ -1,11 +1,11 @@
-<h1>WIG@LOCA</h1>
-<p>Changez votre style</p>
+<h1 class = "text-center mt-5">WIG@LOCA</h1>
+<p class = "text-center">Changez votre style</p>
 
 <div class="container d-flex juftify-content-around flex-wrap">
   <% @wigs.each do |wig| %>
-  <%= link_to wig_path(wig) do %>
-  <div class="wig img-fluid">
-   <%= image_tag wig.url %>
+  <%= link_to wig_path(wig), {:style => "margin: 10px"} do %>
+  <div class="wig" style = "margin:0 50px;">
+   <%= image_tag wig.url, class:"img-fluid" %>
     <div class="wig-infos">
       <div>
         <h2><%= wig.name %></h2>
