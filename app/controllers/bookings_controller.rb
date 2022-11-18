@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: %i[:show]
+  before_action :set_booking, only: %i[show]
     def index
-      @bookings = Booking.all
+      @bookings = Booking.where(user: current_user)
     end
 
     def show

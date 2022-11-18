@@ -1,6 +1,12 @@
+<h1 class="text-center">BOOK NOW!!</h1>
+<div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.coiffure-hairtendance.fr/wp-content/uploads/2016/03/logo-hair-tendance-coiffure-perruques-mariage-chatillon-sur-seine-bourgogne-21-11-1.jpg);">
 <%= simple_form_for ([@wig, @booking]) do |f| %>
-  <%= f.input :starts_at %>
+  <%= f.input :starts_at%>
   <%= f.input :ends_at %>
-  <%= f.input :accepted %>
-  <%= f.submit %>
+  <div class="text-center">
+    <%= f.submit "Book" %>
+  </div>
 <% end %>
+ </div>
+</div>
