@@ -6,6 +6,9 @@ ruby "3.1.2"
 # Use Cloudinary for load image
 gem "cloudinary"
 
+# User geocode
+gem 'geocoder'
+
 gem "devise"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"

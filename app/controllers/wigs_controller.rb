@@ -12,6 +12,14 @@ class WigsController < ApplicationController
   end
 
   def show
+    @wigs = Wig.geocoded
+    @markers = @wigs.map do |wig|
+      {
+        lat: wig.latitude,
+        lng: wig.longitude,
+        # info_window: render_to_string(partial: "info_window", locals: {flat: flat}),
+      }
+  end
   end
 
   def new
